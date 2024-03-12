@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+  <!--Adding Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <title>Job Adda</title>
+</head>
+
+<body>
+  <!--sidebar-->
+  <div class="sidebar">
+    <img src="logo.jpg" alt="Image" class="logo">
+    <h1 class="logo">Job Adda
+      <hr>
+    </h1>
+    <div class="menus">
+      <!-- <a href="menu.html"><ion-icon name="home-outline"></ion-icon>Home</a> -->
+      <a href="employee.html"><ion-icon name="person"></ion-icon>Employee</a>
+      <a href="prerformance.html"><ion-icon name="stats-chart-outline"></ion-icon>Performance</a>
+      <a href="#"><ion-icon name="person-outline"></ion-icon>Contact</a>
+      <a href="notification.html"><ion-icon name="notifications-outline"></ion-icon>
+        <!-- Notification Pop-up Container -->
+        <div id="notification-container">
+          <div id="notification-content"></div>
+          <span id="close-btn" onclick="closeNotification()"></span>
+        </div>
+        Notifications
+      </a>
+    </div>
+    <!--Adding profile-->
+    <div class="profile">
+      <img class="profile" src="images/profile.jpg">
+      <div class="profile-name">
+        <h4>Rohan</h4>
+        <p>Age 21</p>
+      </div>
+    </div>
+  </div>
+
+  <!--main-->
+  <div class="main">
+    <!-- <video width="100" height="50"  loop> -->
+    <!-- <source src="logo.mp4" type="video/mp4">  -->
+    <div class="main-header">
+      <!-- <button id="menuToggle" class="main-header">☰ Menu</button> -->
+      <ion-icon class="menu-bar" name="menu-outline"></ion-icon>
+      <div class="search">
+        <input type="text" placeholder="Search Your Best Job/Work Here...">
+        <button class="btn-search"><ion-icon name="search-outline"></button>
+      </div>
+    </div>
+    <!--In future will pull Recommendation option-->
+    <div class="sort">
+      <p>Sort</p>
+      <div class="sort-list">
+        <select name="" id="">
+          <option value="0">All</option>
+          <option value="1">Newest Post</option>
+          <option value="2">Oldest Post</option>
+          <option value="3">Most Relevant</option>
+          <option value="4">Highest Paid</option>
+        </select>
+      </div>
+    </div>
+    <div class="wrapper">
+      <!-- coma -->
+      <div class="card">
+        <div class="card-left blue-bg">
+          <img src="images/coma.svg" alt="">
+        </div>
+        <div class="card-center"></div>
+        <h3>Roshan Sen</h3>
+        <p class="card-detail"></p>
+        <p class="card-loc"><ion-icon name="location-outline"></ion-icon>Ram Nagar no.1, Bhilai
+        <div class="card-sub">
+          <p><ion-icon name="person"></ion-icon>Age 23</p>
+          <p><ion-icon name="woman"></ion-icon>Female</p>
+          <p><ion-icon name="today-outline"></ion-icon>6 hour ago</p>
+        </div>
+        <div class="card-right">
+          <div class="card-tag">
+            <h5></h5>
+            <a href="#">Employee</a>
+          </div>
+          <div class="card-salary">
+            <!-- <p><b>$30k</b> <span>/year</span></p> -->
+          </div>
+        </div>
+      </div>
+      <!-- comb -->
+      <div class="card">
+        <div class="card-left blue-bg">
+          <img src="images/comb.svg" alt="">
+        </div>
+        <div class="card-center"></div>
+        <h3>Suraj Kumar</h3>
+        <p class="card-detail"></p>
+        <p class="card-loc"><ion-icon name="location-outline"></ion-icon>Ram Nagar No.1, Bhilai</p>
+        <div class="card-sub">
+          <p><ion-icon name="person"></ion-icon>Age 23</p>
+          <p><ion-icon name="woman"></ion-icon>Female</p>
+          <p><ion-icon name="today-outline"></ion-icon>6 hour ago</p>
+        </div>
+        <div class="card-right">
+          <div class="card-tag">
+            <h5></h5>
+            <a href="#">Employee</a>
+          </div>
+          <div class="card-salary">
+            <!-- <p><b>$50k</b> <span>/year</span></p> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- comc -->
+      <div class="card">
+        <div class="card-left blue-bg">
+          <img src="images/comc.svg" alt="">
+        </div>
+        <div class="card-center"></div>
+        <h3>Lucky</h3>
+        <p class="card-detail"></p>
+        <p class="card-loc"><ion-icon name="location-outline"></ion-icon>Ram Nagar No.1, Bhilai</p>
+        <div class="card-sub">
+          <p><ion-icon name="person"></ion-icon>Age 23</p>
+          <p><ion-icon name="man"></ion-icon>Female</p>
+          <p><ion-icon name="today-outline"></ion-icon>6 hour ago</p>
+        </div>
+        <div class="card-right">
+          <div class="card-tag">
+            <h5></h5>
+            <a href="#">Employee</a>
+          </div>
+          <div class="card-salary">
+            <!-- <p><b>$30k</b> <span>/year</span></p> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- comd -->
+      <div class="card">
+        <div class="card-left blue-bg">
+          <img src="images/comd.svg" alt="">
+        </div>
+        <div class="card-center"></div>
+        <h3>Sahswat</h3>
+        <p class="card-detail"></p>
+        <p class="card-loc"><ion-icon name="location-outline"></ion-icon>Ram Nagar No.1, Bhilai</p>
+        <div class="card-sub">
+          <p><ion-icon name="person"></ion-icon>Age 23</p>
+          <p><ion-icon name="woman"></ion-icon>Female</p>
+          <p><ion-icon name="today-outline"></ion-icon>6 hour ago</p>
+        </div>
+        <div class="card-right">
+          <div class="card-tag">
+            <h5></h5>
+            <a href="#">Employee</a>
+          </div>
+          <div class="card-salary">
+            <!-- <p><b>$20k</b> <span>/year</span></p> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- come -->
+      <div class="card">
+        <div class="card-left blue-bg">
+          <img src="images/come.svg" alt="">
+        </div>
+        <div class="card-center"></div>
+        <h3>Shatyam Sahu</h3>
+        <p class="card-detail"></p>
+        <p class="card-loc"><ion-icon name="location-outline"></ion-icon>Ram Nagar No.1, Bhilai</p>
+        <div class="card-sub">
+          <p><ion-icon name="person"></ion-icon>Age 23</p>
+          <p><ion-icon name="man"></ion-icon>Female</p>
+          <p><ion-icon name="today-outline"></ion-icon>6 hour ago</p>
+        </div>
+        <div class="card-right">
+          <div class="card-tag">
+            <h5></h5>
+            <a href="#">Employee</a>
+          </div>
+          <div class="card-salary">
+            <!-- <p><b>$44k</b> <span>/year</span></p> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- comf -->
+      <div class="card">
+        <div class="card-left blue-bg">
+          <img src="images/comf.svg" alt="">
+        </div>
+        <div class="card-center"></div>
+        <h3>Som Sahu</h3>
+        <p class="card-detail"></p>
+        <p class="card-loc"><ion-icon name="location-outline"></ion-icon>Ram Nagar No.1, Bhilai</p>
+        <div class="card-sub">
+          <p><ion-icon name="person"></ion-icon>Age 23</p>
+          <p><ion-icon name="man"></ion-icon>Female</p>
+          <p><ion-icon name="today-outline"></ion-icon>6 hour ago</p>
+        </div>
+        <div class="card-right">
+          <div class="card-tag">
+            <h5></h5>
+            <a href="#">Employee</a>
+          </div>
+          <div class="card-salary">
+            <!-- <p><b>$200k</b> <span>/year</span></p> -->
+          </div>
+        </div>
+      </div>
+      <!-- comg -->
+      <div class="card">
+        <div class="card-left blue-bg">
+          <img src="images/comg.svg" alt="">
+        </div>
+        <div class="card-center"></div>
+        <h3>Rakesh</h3>
+        <p class="card-detail"></p>
+        <p class="card-loc"><ion-icon name="location-outline"></ion-icon>Ram Nagar No.1, Bhilai</p>
+        <div class="card-sub">
+          <p><ion-icon name="person"></ion-icon>Age 23</p>
+          <p><ion-icon name="woman"></ion-icon>Female</p>
+          <p><ion-icon name="today-outline"></ion-icon>6 hour ago</p>
+        </div>
+        <div class="card-right">
+          <div class="card-tag">
+            <h5></h5>
+            <a href="#">Employee</a>
+          </div>
+          <div class="card-salary">
+            <!-- <p><b>$300k</b> <span>/year</span></p> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- comh -->
+      <div class="card">
+        <div class="card-left blue-bg">
+          <img src="images/comh.svg" alt="">
+        </div>
+        <div class="card-center"></div>
+        <h3>Yash Rajput</h3>
+        <p class="card-detail"></p>
+        <p class="card-loc"><ion-icon name="location-outline"></ion-icon>Ram Nagar No.1, Bhilai</p>
+        <div class="card-sub">
+          <p><ion-icon name="person"></ion-icon>Age 23</p>
+          <p><ion-icon name="woman"></ion-icon>Female</p>
+          <p><ion-icon name="today-outline"></ion-icon>6 hour ago</p>
+        </div>
+        <div class="card-right">
+          <div class="card-tag">
+            <h5></h5>
+            <a href="#">Employee</a>
+          </div>
+          <div class="card-salary">
+            <!-- <p><b>$300k</b> <span>/year</span></p> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- comi -->
+      <div class="card">
+        <div class="card-left blue-bg">
+          <img src="images/comi.svg" alt="">
+        </div>
+        <div class="card-center"></div>
+        <h3>Himesh raj</h3>
+        <p class="card-detail"></p>
+        <p class="card-loc"><ion-icon name="location-outline"></ion-icon>Ram Nagar No.1, Bhilai</p>
+        <div class="card-sub">
+          <p><ion-icon name="person"></ion-icon>Age 23</p>
+          <p><ion-icon name="woman"></ion-icon>Female</p>
+          <p><ion-icon name="today-outline"></ion-icon>6 hour ago</p>
+        </div>
+        <div class="card-right">
+          <div class="card-tag">
+            <h5></h5>
+            <a href="#">Employee</a>
+          </div>
+          <div class="card-salary">
+            <!-- <p><b>$300k</b> <span>/year</span></p> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- comj -->
+      <div class="card">
+        <div class="card-left blue-bg">
+          <img src="images/comj.svg" alt="">
+        </div>
+        <div class="card-center"></div>
+        <h3>Kirtan Sahu</h3>
+        <p class="card-detail"></p>
+        <p class="card-loc"><ion-icon name="location-outline"></ion-icon>Ram Nagar No.1, Bhilai</p>
+        <div class="card-sub">
+          <p><ion-icon name="person"></ion-icon>Age 23</p>
+          <p><ion-icon name="woman"></ion-icon>Female</p>
+          <p><ion-icon name="today-outline"></ion-icon>6 hour ago</p>
+        </div>
+        <div class="card-right">
+          <div class="card-tag">
+            <h5></h5>
+            <a href="#">Employee</a>
+          </div>
+          <div class="card-salary">
+            <!-- <p><b>$300k</b> <span>/year</span></p> -->
+          </div>
+        </div>
+      </div>
+
+      <!-- comk -->
+      <div class="card">
+        <div class="card-left blue-bg">
+          <img src="images/comk.svg" alt="">
+        </div>
+        <div class="card-center"></div>
+        <h3>Yog Kumar</h3>
+        <p class="card-detail"></p>
+        <p class="card-loc"><ion-icon name="location-outline"></ion-icon>Ram Nagar No.1, Bhilai</p>
+        <div class="card-sub">
+          <p><ion-icon name="person"></ion-icon>Age 23</p>
+          <p><ion-icon name="woman"></ion-icon>Female</p>
+          <p><ion-icon name="today-outline"></ion-icon>6 hour ago</p>
+        </div>
+        <div class="card-right">
+          <div class="card-tag">
+            <h5></h5>
+            <a href="#">Employee</a>
+          </div>
+          <div class="card-salary">
+            <!-- <p><b>$300k</b> <span>/year</span></p> -->
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+    <!--About us-->
+    <h1 class="h">About Us</h1>
+    <hr class="divider">
+    <b>Welcome to Job Adda </b>
+
+    <p class="para">At Job Adda, we believe that talent knows no bounds, and neither should job opportunities. Our
+      platform connects
+      skilled individuals who may not have a traditional degree with employers who value ability over formal education.
+      Whether you're a self-taught programmer, a creative thinker, or a hands-on problem solver, there's a place for you
+      on Job Adda.</p>
+
+    <hr class="divider">
+    <b>Why Choose Job Adda?</b>
+
+    <p>1. Equal Opportunity:* We level the playing field by focusing on skills and capabilities rather than degrees.
+    </p>
+    2. Diverse Talent Pool:* Access a diverse range of talented individuals with unique perspectives and experiences.
+    </p>
+    3. Employer Satisfaction:* Our employers consistently report high satisfaction rates with the quality of candidates
+    they find on our platform.
+    4. Community Support:* Join a supportive community of like-minded individuals who understand the value of hard work
+    and determination.
+    </p>
+
+    <hr class="divider">
+    <b>Find Your Next Opportunity Today</b>
+    <p>Don't let the lack of a degree hold you back. Join Job Adda and take the next step towards a fulfilling career
+      based on your skills and passion. Discover exciting job opportunities and connect with employers who recognize
+      your potential. Your journey starts here.</p>
+
+
+    <!-- footer section start -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="#">about us</a></li>
+              <li><a href="#">our services</a></li>
+              <li><a href="copyright.html">privacy policy</a></li>
+              <!-- <li><a href="#">affiliate program</a></li> -->
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Get help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Support</a></li>
+            </ul>
+          </div>
+          <!-- <hr class="divider"> -->
+          <div></div>
+          <div class="footer-col">
+            <h4>Contact us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div class="copy">
+        <div class="copy-col">
+          <p class="adds">&copy;Copyright2024 by JOB ADDA </p>
+          <p class="adds1">All Rights Reserved. </p>
+        </div>
+
+      </div>
+    </footer>
+    <!--end footer-->
+
+  </div>
+  <p>employee</p>
+
+  <!-- right section: detail jobs -->
+  <div class="detail">
+    <ion-icon class="close-detail" name="close-outline"></ion-icon>
+    <div class="detail-header">
+      <img src="profile.jpg" alt="">
+      <h2>Roshan</h2>
+      <p>Employee</p>
+    </div>
+    <hr class="divider">
+    <div class="detail-desc">
+      <div class="about">
+        <h4>About Applicant</h4>
+        <p>Employee qualification: have 1 year experience of working in biscuit factory as a security guard. Served as a
+          driver for about 1.5 years for a tech company. </p>
+        <a href="#">Read more </a>
+      </div>
+      <hr class="divider">
+      <div class="qualification">
+        <h4>Qualification</h4>
+        <ul>
+          <li>1o <sup>th</sup> & 12 <sup>th</sup> Passed</li>
+          <li>Age - 21</li>
+        </ul>
+      </div>
+    </div>
+    <hr class="divider">
+    <div class="detail-btn">
+      <button class="btn-apply">Contact</button>
+      <button class="btn-save">Save Profile </button>
+    </div>
+  </div>
+
+</body>
+<!--Adding Icon-->
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script>
+
+<!--Adding library jquery-->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="app.js"></script>
+
+</html>

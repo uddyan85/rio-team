@@ -1,0 +1,113 @@
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #89CFF0, #006fd6);
+    overflow: hidden;
+}
+
+form {
+    text-align: left;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease-out forwards;
+    animation-delay: 0.3s;
+}
+
+body::before,
+body::after,
+.triangle {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+body::before {
+    top: -50px;
+    left: -100px;
+    border-width: 80px 100px;
+    border-color: transparent transparent #4b39d7 transparent;
+    transform: rotate(-15deg);
+    opacity: 0.7;
+}
+
+body::after {
+    bottom: -80px;
+    right: -90px;
+    border-width: 120px 150px;
+    border-color: transparent #15a5ff transparent transparent;
+    transform: rotate(-45deg);
+    opacity: 0.7;
+}
+
+.triangle {
+    display: block;
+    bottom: -120px;
+    left: 50%;
+    border-width: 0 150px 200px;
+    border-color: transparent transparent #03cdff transparent;
+    transform: translateX(-50%) rotate(25deg);
+    opacity: 0.7;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+input[type="text"],
+input[type="number"] {
+    width: calc(100% - 10px); /* Adjust input width considering padding */
+    padding: 8px;
+    margin: 5px 0 15px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    form {
+        padding: 15px;
+    }
+    input[type="text"],
+    input[type="number"],
+    button[type="submit"] {
+        width: 100%;
+    }
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Proposal Form</title>
+    <link rel="stylesheet" href="jobproposal.css">
+</head>
+<body>
+    <div class="triangle"></div>
+    <form id="jobProposalForm" action="#" method="POST">
+        <h2>Job Proposal Form</h2>
+        <div class="form-group">
+            <label for="jobName">Job Name:</label>
+            <input type="text" id="jobName" name="jobName" required>
+        </div>
+        <div class="form-group">
+            <label for="workingHours">Working Hours per Week:</label>
+            <input type="number" id="workingHours" name="workingHours" required>
+        </div>
+        <div class="form-group">
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+        </div>
+        <div class="form-group">
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" required>
+        </div>
+        <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required min="18">
+        </div>
+        <div class="form-group">
+            <label for="salaryMin">Salary Range:</label>
+            <input type="number" id="salaryMin" name="salaryMin" placeholder="Min" required step="100">
+        </div>
+        <div class="form-group">
+            <label for="salaryMax">to</label>
+            <input type="number" id="salaryMax" name="salaryMax" placeholder="Max" required step="100">
+        </div>
+        <button type="submit">Submit Proposal</button>
+    </form>
+    <div id="displayContainer">
+        <h2>Stored Data</h2>
+        <ul id="dataList">
+            <!-- Display stored data here -->
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
